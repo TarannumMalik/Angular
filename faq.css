@@ -1,0 +1,11 @@
+.header{
+    background-color: blue;
+    position: relative;
+    z-index: -1;
+    width: 500px;
+    height: 500px;
+}
+.header h1{
+    position: absolute;
+    z-index: 2;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tab.css">
+    <script defer src="index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <div class="tab">
+        <button class="tablinks" onclick="opencity(event,'london')">london</button>
+        <button class="tablinks" onclick="opencity(event,'paris')">paris</button>
+        <button class="tablinks" onclick="opencity(event,'tokyo')">tokyo</button>
+
+    </div>
+
+
+
+    <div id="london" class="tabcontent">
+        <h1>london</h1>
+    </div>
+    <div id="paris" class="tabcontent">
+        <h1>paris</h1>
+    </div>
+    <div id="tokyo" class="tabcontent">
+        <h1>tokyo</h1>
+    </div>
+
+
+
+ -->
+
+
+
+    <!--page-->
+
+    <div class="course">
+        <h2>our courses</h2>
+        <div class="radio">
+            <input type="radio" class="tablinks" onclick="opencity(event,'graduate')">
+            <span>Graduate</span>
+            <input type="radio" class="tablinks" onclick="opencity(event,'student')">
+            <span>Student</span>
+        </div>
+    </div>
+
+
+
+    <div id="graduate" class="tabcontent">
+        <div class="blue">
+            <button>
+                full stack developer
+            </button>
+        </div>
+        <div class="white">
+            <h1>our graduation course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam omnis, maiores commodi molestiae
+                perspiciatis quaerat tenetur ipsa distinctio cum! Reprehenderit!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt veritatis laboriosam dolore voluptatum
+                nam rerum magni possimus earum veniam debitis?</p>
+        </div>
+
+
+    </div>
+    <div id="student" class="tabcontent">
+        <div class="blue">
+            <button class="courselink" onclick="page(event,'expert')">
+                expert
+            </button>
+            <button class="courselink" onclick="page(event,'dsa')" style="margin-top: 300px;">
+                dsa
+            </button>
+        </div>
+        <div class="white" id="expert">
+            <h1>our graduation course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam omnis, maiores commodi molestiae
+                perspiciatis quaerat tenetur ipsa distinctio cum! Reprehenderit!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt veritatis laboriosam dolore voluptatum
+                nam rerum magni possimus earum veniam debitis?</p>
+        </div>
+        <div class="white" id="dsa">
+            <h1>our graduation course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam omnis, maiores commodi molestiae
+                perspiciatis quaerat tenetur ipsa distinctio cum! Reprehenderit!</p>
+                <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt veritatis laboriosam dolore voluptatum
+                nam rerum magni possimus earum veniam debitis?</p>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

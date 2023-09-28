@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+<div class="tab-titles">
+    <P class="tab-links active-link" onclick="opentab('graduate')">graduate</P>
+    <P class="tab-links" onclick="opentab('student')">student</P>
+</div>
+<div class="tab-contents active-tab" id="graduate">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rerum corporis vel ipsa culpa obcaecati laboriosam perferendis mollitia sequi iusto.</p>
+</div>
+<div class="tab-contents" id="student">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rerum corporis vel ipsa culpa obcaecati laboriosam perferendis mollitia sequi iusto.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, dolorem?</p>
+</div>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontent  of tabcontents){
+            tablink.classlist.remove("active-tab");
+        }
+    event.currentTarget.classlist.add("active-link");
+    document.getElementById(tabname).classlist.add("active-tab")
+    }
+</script>
+</body>
+</html>
